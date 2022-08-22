@@ -23,7 +23,9 @@ public class MyUserController {
     
     @PostMapping("/addUser/")
     public MyUserModels saveUser(@RequestBody MyUserModels MyUserModel){
-        return UserRepository.save(MyUserModel);
+        // System.out.println(MyUserModel.getFirstName() + " " + MyUserModel.getLastName());
+        return UserService.saveUser(MyUserModel);
+        //return UserRepository.save(MyUserModel);
     }
 
     @GetMapping("/getallusers")

@@ -15,4 +15,5 @@ import com.example.demo.Models.MyUserModels;
 public interface MyUserRepositories extends MongoRepository<MyUserModels,ObjectId>{
     // Optional<MyUserModels> findById(ObjectId id);       // the query for schema starts with findBy..
 
+    // Write a Custom Query
 }

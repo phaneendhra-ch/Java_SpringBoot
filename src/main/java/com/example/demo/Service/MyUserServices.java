@@ -16,6 +16,9 @@ public class MyUserServices {
     @Autowired
     private MyUserRepositories UserRepository;
 
+    public MyUserModels saveUser(MyUserModels user){
+        return  UserRepository.save(user);
+    }
     public List<MyUserModels> getAllUsers(){
         return UserRepository.findAll();
     }

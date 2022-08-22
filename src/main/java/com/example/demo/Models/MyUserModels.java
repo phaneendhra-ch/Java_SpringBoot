@@ -12,7 +12,7 @@ public class MyUserModels {
     
     @Id
     private ObjectId id;
-    private String FirstName;
-    private String LastName;
+    private String firstName;       // always starts with lowercase (java variables)
+    private String lastName;
     private String password;
 }
